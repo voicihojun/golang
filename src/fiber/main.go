@@ -21,8 +21,6 @@ type Employee struct {
 }
 
 func main() {
-
-	// db, err := sql.Open("postgres", "user=postgres password=password dbname=goapi sslmode=disable")
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+
 		"password=%s dbname=%s sslmode=disable",
 		host, port, user, password, dbname)
